@@ -5,6 +5,18 @@ body {
     background-color: #131313;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
 .title {
     font-family: Yeseva One;
     font-style: normal;
@@ -86,7 +98,6 @@ body {
 
 .nav_bar {
     display: flex;
-    list-style-type: none;
     padding: 0;
 }
 
@@ -100,7 +111,6 @@ body {
 
 .nav_item-link {
     text-transform: uppercase;
-    text-decoration: none;
     color: #FFFFFF;
 }
 
@@ -123,6 +133,8 @@ body {
 }
 
 /* Main */
+
+/* Home page */
 
 .home_page {
     width: 100%;
@@ -183,6 +195,66 @@ body {
 
 .main_text-last {
     color: #E3B873;
+}
+
+/* Info slider */
+
+.info_slider {
+    width: 100%;
+    height: 670px;
+    position: relative;
+    margin-top: 107px;
+}
+
+.info_container {
+    width: 1263px;
+    height: 576px;
+}
+
+.info_container-main {
+    width: 1205px;
+    height: 524px;
+}
+
+.info_container-list {
+    width: 487px;
+    height: 512px;
+}
+
+.info_list {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 102px 0 0;
+}
+
+.list_item {
+    margin-right: 60px;
+}
+
+.list_item:last-of-type {
+    margin-right: 0;
+}
+
+.list_item-link {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.clicked_link {
+    color: #E3B873;
+}
+
+.clicked_link:after {
+    content: "";
+    display:block;
+    width: 194px;
+    padding-bottom: 6px;
+    border-bottom: #E3B873 solid 1px;
 }
 
 /* Footer */
