@@ -26,6 +26,7 @@ li {
     letter-spacing: -0.07em;
     text-transform: uppercase;
     color: #E3B873;
+    margin: 0;
 }
 
 .subtitle {
@@ -46,6 +47,7 @@ li {
 
 .container {
     margin: 0 auto;
+    width: 1263px;
 }
 
 .button_text {
@@ -74,7 +76,6 @@ li {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 1256px;
     height: 83px;
 }
 
@@ -160,12 +161,11 @@ li {
 }
 
 .main_container {
-    width: 1263px;
     height: 352px;
     z-index: 2;
     position: relative;
+    padding-left: 46px;
     padding-top: 194px;
-    padding-left: 110px;
 }
 
 .main_button {
@@ -207,8 +207,12 @@ li {
 }
 
 .info_container {
-    width: 1263px;
     height: 576px;
+    padding-left: 46px;
+    background-image: url("../images/other/slider.jpg");
+    background-repeat: no-repeat;
+    background-size: 679px 482px;
+    background-position: bottom 20px right 85px;
 }
 
 .info_container-main {
@@ -256,5 +260,88 @@ li {
     padding-bottom: 6px;
     border-bottom: #E3B873 solid 1px;
 }
+
+.info_container-secondary {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info_slider-title {
+    margin-bottom: 34px;
+    margin-top: 45px;
+}
+
+.info_item {
+    width: 240px;
+    height: 100px;
+    margin-bottom: -10px;
+}
+
+.info_slider-text {
+    font-family: Nunito Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-top: 0;
+    margin-bottom: 42px;
+}
+
+.info_item-subtitle {
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    margin: 0;
+}
+
+.attribute {
+    font-size: 13px;
+    line-height: 21px;
+}
+
+/* Slider buttons */
+
+.slider_dots:before {
+    content: url("../images/svg/slider_arrow.svg");
+    transform: rotate(-180deg);
+    display: flex;
+    align-items: center;
+}
+
+.slider_dots {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.slider_dots:after {
+    content: url("../images/svg/slider_arrow.svg");
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    margin-right: 18px;
+}
+
+.dot:first-of-type {
+    background: #FFFFFF;
+    margin-left: 30px;
+}
+
+.dot:last-of-type {
+    margin-right: 30px;
+}
+
+/*  */
 
 /* Footer */
