@@ -308,14 +308,18 @@ li {
 /* Slider buttons */
 
 .slider_dots:before, .slider_dots:after {
-    content: url("../images/svg/slider_arrow.svg");
     display: flex;
     align-items: center;
     cursor: pointer;
+    padding-top: 5px;
 }
 
 .slider_dots:before {
-    transform: rotate(-180deg);
+    content: url("../images/svg/slider_arrow2.svg");
+}
+
+.slider_dots:after {
+    content: url("../images/svg/slider_arrow.svg");
 }
 
 .slider_dots {
@@ -416,7 +420,7 @@ li {
     border-radius: 90px;
     top: calc(50% - 43px);
     left: calc(50% - 43px);
-    background: #E3B873 no-repeat center url("../images/svg/triangle.svg");
+    background: #E3B873 no-repeat center center url("../images/svg/triangle.svg");
 }
 
 .camera_image-container:after {
@@ -545,4 +549,26 @@ li {
     cursor: pointer;
     margin-top: 15px;
 }
+
+/* Types of repair */
+
+.types_of_repair {
+    display: flex;
+    background-color: #E5E5E5;
+}
+
+.types_of_repair-subtitle {
+    margin: 0 auto 14px auto;
+}
+
+.types_of_repair-container {
+
+}
+
+.types_of_repair_icon {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
 /* Footer */
